@@ -16,7 +16,7 @@ jobs:
         with:
           linter: pylint
 
-  docker:
+  buildx-docker:
     runs-on: ubuntu-latest
     steps:
       -
@@ -37,3 +37,4 @@ jobs:
           context: .
           push: false
           tags: user/app:latest
+
